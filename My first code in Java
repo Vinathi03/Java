@@ -1,0 +1,47 @@
+public class ClassA{
+    int meth1(int a,String b){
+        System.out.println(a);
+        int result=meth3(30,40,50);
+        return a;
+    }
+    String meth2(String c,String d){
+        ClassA aobj=new ClassA();
+        aobj.meth1(5,"Hello");
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(c+d);
+        return c;
+        
+    }
+    int meth3(int x,int y,int z){
+        System.out.println(x+z);
+        System.out.println(y+z);
+        System.out.println(x+y);
+        return 0;
+    }
+    String meth4(String w, String x) {
+    System.out.println(w);
+    System.out.println(x);
+    return new ClassA().meth2("Java", "here");
+}
+    
+    public static void main(String []args){
+        System.out.println("Start");
+        ClassA aobj=new ClassA();
+        aobj.meth4("Java","App");
+        System.out.println("end");
+        
+    }
+}
+//output:
+/*Start
+Java
+App
+5
+80
+90
+70
+Java
+here
+Javahere
+end*/
