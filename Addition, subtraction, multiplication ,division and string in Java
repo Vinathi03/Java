@@ -1,0 +1,49 @@
+package demo;
+
+public class ClassC {
+	void sum() {
+		int a=10;
+		int b=25;
+		int c=a+b;
+		System.out.println("Sum is:"+c);
+		ClassC cobj=new ClassC();
+		cobj.div();
+	}
+	void sub() {
+		int a=20;
+		int b=30;
+		System.out.println("Sub is:"+(b-a));
+		
+	}
+	void mul() {
+		int c=80;
+		int d=70;
+		ClassC cobj=new ClassC();
+		cobj.stg();
+		System.out.println("Multiplication is :"+(c*d));
+	}
+	void div() {
+		int e=400;
+		int f=50;
+		ClassC cobj=new ClassC();
+		cobj.mul();
+		System.out.println("Division is :"+(e%f));
+	}
+	
+	void stg() {
+		char app='s';
+		System.out.println("String is :"+app);
+		ClassC cobj=new ClassC();
+		cobj.sub();
+		
+	}
+	public static void main(String []args) {
+		System.out.println("Start");
+		ClassC cobj=new ClassC();
+		cobj.sum();
+		
+		
+		System.out.println("End");
+		
+	}
+}
