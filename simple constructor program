@@ -1,0 +1,21 @@
+package training;
+
+public class ClassC {
+	void mth1() {
+		System.out.println("mth1() called");
+	}
+	ClassC()
+	{
+		System.out.println("Class A non-parameterised constructor");
+	}
+	ClassC(int x){
+		System.out.println("x:"+x);
+		new ClassC().mth1();
+		System.out.println("Class A parameterised constructor");
+	}
+	public static void main(String[] args) {
+		new ClassC(500).mth1();
+	}
+	
+
+}
