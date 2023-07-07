@@ -1,0 +1,60 @@
+package training;
+public class ClassD {
+	//cons1
+	public ClassD() {//main
+		System.out.println("Sunday");
+		ClassD obj=new ClassD(10);
+		System.out.println("Tuesday");
+		String s=obj.display("Challenge Accepted");
+		System.out.println(s);
+	}
+	//cons2
+	public ClassD(int temp) {//cons1 temp=10
+		System.out.println("Saturday");
+		ClassD obj=new ClassD(10,20);
+		int a=obj.mth1()+temp;//a=100+10=110
+		System.out.println("==>"+(a+obj.mth2()));//110+99=209
+		System.out.println("Monday");}
+	//cons3
+		String display(String S) {//cons1
+		System.out.println("In nxt statement I am returning string value");
+		return S;}
+		//mth1
+		int mth1() {
+			return 100;
+		}
+		//mth2
+		int mth2() {
+			return 99;
+		}
+		//cons4
+		public ClassD(int data,int temp) {//cons1 data=10, temp=20 mth2()=99
+			System.out.println("Thrusday");
+			System.out.println("==>"+(data+new ClassD("hi").mth2()-temp));
+		}
+		//cons 5
+		ClassD(String S){
+			System.out.println(S);
+		}
+		//mth3
+		public static void main(String []args){
+			System.out.println("Started");
+			ClassD obj=new ClassD();
+			System.out.println("Output verified");
+		}
+}
+
+
+OUTPUT:
+/*Started
+Sunday
+Saturday
+Thrusday
+hi
+==>89
+==>209
+Monday
+Tuesday
+In nxt statement I am returning string value
+Challenge Accepted
+Output verified  */
