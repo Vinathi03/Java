@@ -1,0 +1,16 @@
+package training;
+
+public class Call {
+	
+	void mth1() {
+		System.out.println("Hello");
+	}
+	public Call() {
+		//just like void we can return nothing
+		return;
+	}
+public static void main(String []args) {
+	Call obj=new Call();
+	obj.mth1();
+}
+}
