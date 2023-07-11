@@ -1,0 +1,29 @@
+package training;
+
+public class aobj {
+String empName;
+int empId,empSal;
+static String company="TCS";
+aobj(String Name,int id,int sal ){
+	empName=Name;
+	empId=id;
+	empSal=sal;
+}
+public static void main(String []args) {
+	System.out.println("begins");
+	aobj obj1=new aobj("Vinny",133,50000);
+	aobj obj2=new aobj("Ram",134,60000);
+	aobj obj3=new aobj("Kesav",123,90000);
+	System.out.println("obj1:"+obj1.empName+" "+obj1.empId+" "+obj1.empSal);
+	System.out.println("obj2:"+obj2.empName+" "+obj2.empId+" "+obj2.empSal);
+	System.out.println("obj3:"+obj3.empName+" "+obj3.empId+" "+obj3.empSal);
+	obj1.empSal=80000;
+	System.out.println("obj1:"+obj1.empName+" "+obj1.empId+" "+obj1.empSal);
+	obj1.company="HCL";
+	System.out.println("obj1:"+obj1.empName+" "+obj1.empId+" "+obj1.empSal+" "+obj1.company);
+	System.out.println("obj2:"+obj2.empName+" "+obj2.empId+"  "+obj2.empSal+" "+obj2.company);
+	System.out.println("obj3:"+obj3.empName+" "+obj3.empId+" "+obj3.empSal+" "+obj3.company);
+	
+	
+}
+}
