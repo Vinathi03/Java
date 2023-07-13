@@ -1,0 +1,28 @@
+package training;
+
+public class exam {
+	void exameligible(String name,int age){
+		if(age>20) {
+			System.out.println(name+" Eligible for exam");
+		}
+		else {
+			System.out.println(name+" Not eligible for exam");
+		}
+	new exam().mth("Btech",9.03);
+	
+	}
+	void mth(String degree,double d) {
+		if(d>6) {
+		if(degree=="btech"||degree=="b.sc"||degree=="B.sc"||degree=="Btech") {
+			System.out.print(" and ligible for placement too");	
+		}
+		else {
+			System.out.print("and Not eligible for placement exam too");
+			
+		}
+		}
+	}
+public static void main(String[] args) {
+	new exam().exameligible("vinathi",21);
+}
+}
