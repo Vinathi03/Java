@@ -1,0 +1,21 @@
+package training;
+
+public class wap {
+	void mth(int a,int b,int c) {
+		System.out.println("ADD:"+(a+b+c));
+		new wap().mth2(100,1);
+	}
+	void mth2(int a,int b) {
+		System.out.println("sub:"+(a-b));
+	}
+	wap(){
+		System.out.println("Division"+(2436/356));
+	}
+	wap(int a){
+		System.out.println("Multiplication:"+(a*a));
+	}
+	public static void main(String[] args) {
+		new wap(10).mth(10,20,30);
+	}
+
+}
