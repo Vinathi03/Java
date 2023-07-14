@@ -1,0 +1,24 @@
+package training;
+
+public class Staticmth {
+	int x=20;
+	static int y=30;
+	void mth() {
+		System.out.println("mth()called");
+		System.out.println("Instance variable x:"+x);
+		System.out.println("Static variable y:"+y);
+	}
+	static void mth2() {
+		System.out.println("mth2()called");
+		System.out.println("Instance variable x:"+new Staticmth().x);
+		System.out.println("Static variable y:"+y);
+	}
+	public static void main(String[] args) {
+		Staticmth obj=new Staticmth();
+		obj.mth();
+		System.out.println("--------");
+		obj.mth2();//class obj
+		mth2();
+	}
+
+}
