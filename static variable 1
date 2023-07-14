@@ -1,0 +1,19 @@
+package training;
+
+public class Staticvar {
+	int x;
+	static int y;
+  final static int z=10;//100% final variable need to be intialised
+	Staticvar(){
+		x++;
+		System.out.println("Instance variable x:"+x);
+		y++;
+		System.out.println("Static Variable y:"+y);
+	}
+	public static void main(String[] args) {
+		new Staticvar();
+		new Staticvar();
+		new Staticvar();
+	}
+
+}
