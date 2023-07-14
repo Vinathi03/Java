@@ -1,0 +1,17 @@
+package training;
+
+public class Staticblock {
+	final static int x;
+	static {
+		x=100;
+		System.out.println("1st Static block executed:"+x);
+	}
+	public static void main(String[] args) {
+		System.out.println("main() called:"+x);
+		
+	}
+	static {
+		System.out.println("2nd Static block executed:"+x);
+	}
+
+}
