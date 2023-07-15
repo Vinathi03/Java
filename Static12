@@ -1,0 +1,14 @@
+package training;
+
+public class Static12 {
+	static int x=10;
+	public static void main(String[] args) {
+		Static12 t1=new Static12();
+		Static12 t2=new Static12();
+		t1.x=20;
+		System.out.print(x+" ");
+		System.out.print(t2.x);
+		
+	}
+
+}
