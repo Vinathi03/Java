@@ -1,0 +1,15 @@
+package training;
+
+public class Staticblockmth {
+	static int x=mth1();
+	static int mth1() {
+		System.out.println("mth1() called");
+		return 100;
+	}
+	static{
+	System.out.println("Static block executed:"+x);
+}
+	public static void main(String[] args) {
+		System.out.println("main() called:"+x);
+	}
+}
