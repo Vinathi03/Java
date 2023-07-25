@@ -1,0 +1,92 @@
+package practice;
+
+public class ClassA {
+	void mth() {
+		System.out.println("---mth1()----");
+		for(int i=0;i<=5;i++) {
+			System.out.println("i value is:"+i);
+			
+		}
+		System.out.println("mth() execution called");
+		
+	}
+	void mth2() {
+		System.out.println("---mth2()----");
+		int i=1;
+		for(;i<=10;i++) {
+			System.out.println("i value:"+ ++i);
+	
+		}
+		System.out.println("mth2() execution called");
+		
+	}
+	void mth3() {
+		System.out.println("---mth3()----");
+		int i=1;
+		for(;i<=10;) {
+			System.out.println("i value:"+ ++i);	
+		}
+		System.out.println("mth3() execution called");
+	}
+	void mth4() {
+		System.out.println("---mth4()----");
+		int i=1;
+		for(;;) {
+			System.out.println("i value:"+ ++i);	
+		}
+		//System.out.println("mth3() execution called"); CE because of unreachable code;
+		
+		
+	}
+	void mth5() {
+		System.out.println("---mth5()----");
+		int i=1;
+		for
+		(
+		System.out.println("---mth5()----");
+				i<=5;
+		System.out.println("Java is awesome")		
+		)
+		{
+			System.out.println("i value is:"+i);
+			i++;
+		}
+		System.out.println("mth5() execution called");
+		
+		
+	}
+	void mth6() {
+		System.out.println("----mth6-----");
+		for(int i=new ClassA().mth7()-new ClassA().mth9();i<=5;new ClassA().mth10()) {
+			System.out.println("i value :"+ i++);
+		}
+		System.out.println("mth6() executed");
+	}
+	int mth7() {
+		System.out.println("mth7()called");
+		return 10;
+	}
+	int mth8() {
+		System.out.println("mth7()called");
+		return 20;
+	}
+	int mth9() {
+		System.out.println("mth9()called");
+		return 100;
+		
+	}
+	int mth10() {
+		System.out.println("executed suceessfully");
+		return 50;
+	}
+	public static void main(String[] args) {
+		ClassA obj=new ClassA();
+		obj.mth();
+		obj.mth2();
+		obj.mth3();
+		obj.mth4();
+		obj.mth5();
+		obj.mth6();
+	}
+
+}
