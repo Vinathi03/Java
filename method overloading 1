@@ -1,0 +1,15 @@
+class HelloWorld {
+    void cat(int c,int d){
+        System.out.println(c+d);
+    }
+    void dog(int c){
+         System.out.println(c);
+    }
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+        HelloWorld obj=new HelloWorld();
+        obj.cat(20,30);
+        
+        obj.dog(20);
+    }
+}
